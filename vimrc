@@ -113,7 +113,6 @@ highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t/
 
 call pathogen#infect()
-let g:Powerline_symbols = 'unicode'
 
 nnoremap ; :
 map <leader><Right> :bn<cr>
@@ -121,3 +120,4 @@ map <leader><Left> :bp<cr>
 map <leader>l :LustyJuggler<cr>
 
 set laststatus=2   " Always show the statusline
+let g:Powerline_symbols = 'fancy'

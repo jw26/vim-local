@@ -112,11 +112,12 @@ endtry
 highlight RedundantSpaces ctermbg=red guibg=red
 match RedundantSpaces /\s\+$\| \+\ze\t/
 
-set statusline=%f\ %2*%m\ %1*%h%r%=[%{&encoding}\ %{&fileformat}\ %{strlen(&ft)?&ft:'none'}\ %{getfperm(@%)}]\ 0x%B\ %12.(%c:%l/%L%)
-
 call pathogen#infect()
+let g:Powerline_symbols = 'unicode'
 
 nnoremap ; :
 map <leader><Right> :bn<cr>
 map <leader><Left> :bp<cr>
 map <leader>l :LustyJuggler<cr>
+
+set laststatus=2   " Always show the statusline

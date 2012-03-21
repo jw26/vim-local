@@ -89,11 +89,15 @@ endif " has("autocmd")
 
 set expandtab
 set ts=2 sw=2
+set nohlsearch
 
 colorscheme lucius
 
 " drupal stupidness
 au BufRead,BufNewFile *.module,*.theme,*.install,*.test set filetype=php
+
+" ruby complete
+au BufRead,BufNewFile *.rb,Gemfile,Guardfile, set filetype=ruby
 
 autocmd BufEnter * :syntax sync fromstart
 
@@ -119,5 +123,9 @@ map <leader><Right> :bn<cr>
 map <leader><Left> :bp<cr>
 map <leader>l :LustyJuggler<cr>
 
+inoremap <leader>y ✔
+inoremap <leader>n ✖
+
 set laststatus=2   " Always show the statusline
 let g:Powerline_symbols = 'fancy'
+

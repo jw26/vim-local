@@ -99,6 +99,9 @@ au BufRead,BufNewFile *.module,*.theme,*.install,*.test set filetype=php
 " ruby complete
 au BufRead,BufNewFile *.rb,Gemfile,Guardfile, set filetype=ruby
 
+" clojurescript
+au BufNewFile,BufRead *.cljs set filetype=clojure
+
 autocmd BufEnter * :syntax sync fromstart
 
 "no backups or swaps please
@@ -123,8 +126,8 @@ map <leader><Right> :bn<cr>
 map <leader><Left> :bp<cr>
 map <leader>l :LustyJuggler<cr>
 
-inoremap <leader>y ✔
-inoremap <leader>n ✖
+inoremap <leader>yes ✔
+inoremap <leader>no ✖
 
 set laststatus=2   " Always show the statusline
 let g:Powerline_symbols = 'fancy'

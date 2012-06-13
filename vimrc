@@ -129,3 +129,7 @@ inoremap <leader>n ✖
 set laststatus=2   " Always show the statusline
 let g:Powerline_symbols = 'fancy'
 
+"let g:Powerline_symbols = 'unicode'
+
+"allow buffer navigation without saving
+set hid

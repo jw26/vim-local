@@ -10,9 +10,12 @@
 [submodule "bundle/vim-clojure"]
 	path = bundle/vim-clojure
 	url = git://github.com/vim-scripts/VimClojure.git
-[submodule "bundle/vim-jade"]
-	path = bundle/vim-jade
-	url = git://github.com/digitaltoad/vim-jade.git
+#[submodule "bundle/vim-jade"]
+#	path = bundle/vim-jade
+#	url = git://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-jade"]
+	path = bundle/vim-jade
+	url = git://github.com/digitaltoad/vim-jade.git

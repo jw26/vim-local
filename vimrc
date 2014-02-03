@@ -111,8 +111,10 @@ set nowb
 
 "Persistent undo
 try
-  set undodir=~/.vim_runtime/undodir
-  set undofile
+  if version >= 703
+    set undodir=~/.vim_runtime/undodir
+    set undofile
+  endif
 catch
 endtry
 
@@ -138,3 +140,5 @@ let g:Powerline_symbols = 'fancy'
 
 "allow buffer navigation without saving
 set hid
+
+let g:LustyJugglerSuppressRubyWarning = 1
